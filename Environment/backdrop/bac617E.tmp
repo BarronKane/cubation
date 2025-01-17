@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcugc2py1iu8c"]
+
+[ext_resource type="PlaneMesh" uid="uid://s3wkpkgoxb8l" path="res://Environment/backdrop/backdrop.tres" id="1_vhcjf"]
+[ext_resource type="Script" path="res://Environment/backdrop/backdrop.gd" id="2_r824n"]
+
+[node name="Backdrop" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = ExtResource("1_vhcjf")
+script = ExtResource("2_r824n")

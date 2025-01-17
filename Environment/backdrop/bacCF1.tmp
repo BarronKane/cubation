@@ -1,0 +1,19 @@
+[gd_resource type="PlaneMesh" load_steps=3 format=3 uid="uid://s3wkpkgoxb8l"]
+
+[ext_resource type="Shader" uid="uid://f6gmc2f8qhbx" path="res://Environment/backdrop/backdrop_material.tres" id="1_ttaev"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a7dh4"]
+render_priority = 0
+shader = ExtResource("1_ttaev")
+shader_parameter/TilingSize = 8.0
+shader_parameter/LineWidth = 1.3
+shader_parameter/LineColor = Color(0.958945, 0.356693, 0.728605, 1)
+shader_parameter/bShowPulse = true
+shader_parameter/GridLightSize = 1.0
+shader_parameter/GridLightPulseSpeed = 1.8
+
+[resource]
+material = SubResource("ShaderMaterial_a7dh4")
+size = Vector2(10, 10)
+subdivide_width = 32
+subdivide_depth = 32

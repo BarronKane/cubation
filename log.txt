@@ -1,0 +1,94 @@
+Godot Engine v4.3.stable.mono.custom_build.77dcf97d8 (2024-08-14 23:00:16 UTC) - https://godotengine.org
+OpenGL API 3.3.0 Core Profile Context 24.12.1.241127 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon RX 6900 XT
+
+GitLFSPlugin initialized.
+GitLFSPlugin entering tree.
+GitLFSInspectorPlugin initialized.
+USER WARNING: Property not found: application/config/resource_path
+   at: ProjectSettings::_get (core\config\project_settings.cpp:351)
+GitLFSPlugin initialized.
+GitLFSPlugin deinitialized.
+USER WARNING: TilingAndOffset is missing a category.
+   at: VisualShaderNode::get_category (scene\resources\visual_shader.cpp:415)
+USER WARNING: Polygon is missing a category.
+   at: VisualShaderNode::get_category (scene\resources\visual_shader.cpp:415)
+USER WARNING: ColorMask is missing a category.
+   at: VisualShaderNode::get_category (scene\resources\visual_shader.cpp:415)
+USER WARNING: RGBASplit is missing a category.
+   at: VisualShaderNode::get_category (scene\resources\visual_shader.cpp:415)
+File is LFS tracked: C:/Projects/Godot/Workspace/cubation/Environment/backdrop/backdrop.tres
+Asset is not checked out.
+Updating elements.
+USER WARNING: A Thread object is being destroyed without its completion having been realized.
+Please call wait_to_finish() on it to ensure correct cleanup.
+   at: Thread::~Thread (core\os\thread.cpp:107)
+File is LFS tracked: C:/Projects/Godot/Workspace/cubation/Environment/backdrop/backdrop.tres
+Asset is not checked out.
+CHECKING STATUS:
+status precheck: CheckedIn
+Status is CheckedIn
+Checking out asset.
+USER WARNING: A Thread object is being destroyed without its completion having been realized.
+Please call wait_to_finish() on it to ensure correct cleanup.
+   at: Thread::~Thread (core\os\thread.cpp:107)
+File is LFS tracked: C:/Projects/Godot/Workspace/cubation/Environment/backdrop/backdrop.tres
+Asset is not checked out.
+CHECKING STATUS:
+status precheck: CheckedIn
+Status is CheckedIn
+Checking out asset.
+
+================================================================
+CrashHandlerException: Program crashed
+Engine version: Godot Engine v4.3.stable.mono.custom_build (77dcf97d82cbfe4e4615475fa52ca03da645dbd8)
+Dumping the backtrace. Please include this when reporting the bug to the project developer.
+[0] <couldn't map PC to fn name>
+[1] _CxxThrowException (D:\a\_work\1\s\src\vctools\crt\vcruntime\src\eh\throw.cpp:75)
+[2] std::_Throw_Cpp_error (D:\a\_work\1\s\src\vctools\crt\github\stl\src\thread0.cpp:35)
+[3] std::thread::join (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\thread:126)
+[4] Thread::wait_to_finish (C:\Projects\Godot\Godot\core\os\thread.cpp:87)
+[5] core_bind::Thread::wait_to_finish (C:\Projects\Godot\Godot\core\core_bind.cpp:1320)
+[6] call_with_ptr_args_ret_helper<core_bind::Thread,Variant> (C:\Projects\Godot\Godot\core\variant\binder_common.h:335)
+[7] call_with_ptr_args_ret<core_bind::Thread,Variant> (C:\Projects\Godot\Godot\core\variant\binder_common.h:584)
+[8] MethodBindTR<core_bind::Thread,Variant>::ptrcall (C:\Projects\Godot\Godot\core\object\method_bind.h:549)
+[9] gdextension_object_method_bind_ptrcall (C:\Projects\Godot\Godot\core\extension\gdextension_interface.cpp:1223)
+[10] <couldn't map PC to fn name>
+[11] <couldn't map PC to fn name>
+[12] <couldn't map PC to fn name>
+[13] <couldn't map PC to fn name>
+[14] <couldn't map PC to fn name>
+[15] <couldn't map PC to fn name>
+[16] <couldn't map PC to fn name>
+[17] GDExtensionMethodBind::call (C:\Projects\Godot\Godot\core\extension\gdextension.cpp:251)
+[18] Object::callp (C:\Projects\Godot\Godot\core\object\object.cpp:808)
+[19] Callable::callp (C:\Projects\Godot\Godot\core\variant\callable.cpp:69)
+[20] Object::emit_signalp (C:\Projects\Godot\Godot\core\object\object.cpp:1188)
+[21] Node::emit_signalp (C:\Projects\Godot\Godot\scene\main\node.cpp:3896)
+[22] Object::emit_signal<> (C:\Projects\Godot\Godot\core\object\object.h:936)
+[23] BaseButton::_pressed (C:\Projects\Godot\Godot\scene\gui\base_button.cpp:138)
+[24] BaseButton::on_action_event (C:\Projects\Godot\Godot\scene\gui\base_button.cpp:176)
+[25] BaseButton::gui_input (C:\Projects\Godot\Godot\scene\gui\base_button.cpp:69)
+[26] Control::_call_gui_input (C:\Projects\Godot\Godot\scene\gui\control.cpp:1831)
+[27] Viewport::_gui_call_input (C:\Projects\Godot\Godot\scene\main\viewport.cpp:1570)
+[28] Viewport::_gui_input_event (C:\Projects\Godot\Godot\scene\main\viewport.cpp:1799)
+[29] Viewport::push_input (C:\Projects\Godot\Godot\scene\main\viewport.cpp:3259)
+[30] Window::_window_input (C:\Projects\Godot\Godot\scene\main\window.cpp:1682)
+[31] call_with_variant_args_helper<Window,Ref<InputEvent> const &,0> (C:\Projects\Godot\Godot\core\variant\binder_common.h:304)
+[32] call_with_variant_args<Window,Ref<InputEvent> const &> (C:\Projects\Godot\Godot\core\variant\binder_common.h:419)
+[33] CallableCustomMethodPointer<Window,Ref<InputEvent> const &>::call (C:\Projects\Godot\Godot\core\object\callable_method_pointer.h:104)
+[34] Callable::callp (C:\Projects\Godot\Godot\core\variant\callable.cpp:58)
+[35] Callable::call<Ref<InputEvent> > (C:\Projects\Godot\Godot\core\variant\variant.h:876)
+[36] DisplayServerWindows::_dispatch_input_event (C:\Projects\Godot\Godot\platform\windows\display_server_windows.cpp:3557)
+[37] DisplayServerWindows::_dispatch_input_events (C:\Projects\Godot\Godot\platform\windows\display_server_windows.cpp:3528)
+[38] Input::_parse_input_event_impl (C:\Projects\Godot\Godot\core\input\input.cpp:775)
+[39] Input::flush_buffered_events (C:\Projects\Godot\Godot\core\input\input.cpp:1056)
+[40] DisplayServerWindows::process_events (C:\Projects\Godot\Godot\platform\windows\display_server_windows.cpp:3025)
+[41] OS_Windows::run (C:\Projects\Godot\Godot\platform\windows\os_windows.cpp:1666)
+[42] widechar_main (C:\Projects\Godot\Godot\platform\windows\godot_windows.cpp:181)
+[43] _main (C:\Projects\Godot\Godot\platform\windows\godot_windows.cpp:206)
+[44] main (C:\Projects\Godot\Godot\platform\windows\godot_windows.cpp:220)
+[45] WinMain (C:\Projects\Godot\Godot\platform\windows\godot_windows.cpp:234)
+[46] __scrt_common_main_seh (D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288)
+[47] <couldn't map PC to fn name>
+-- END OF BACKTRACE --
+================================================================
